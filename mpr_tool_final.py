@@ -118,7 +118,7 @@ def parseArgs():
                         help="Baselight export file (default: %(default)s)")
     parser.add_argument("xytech", nargs="?", default="Xytech_Fall2026.txt",
                         help="Xytech work order file (default: %(default)s)")
-    parser.add_argument("-o", "--output", default="Project_1.csv",
+    parser.add_argument("-o", "--output", default="MPR_Result.csv",
                         help="output CSV file (default: %(default)s)")
     return parser.parse_args()
 
