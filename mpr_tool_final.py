@@ -121,3 +121,22 @@ def parseArgs():
     parser.add_argument("-o", "--output", default="Project_1.csv",
                         help="output CSV file (default: %(default)s)")
     return parser.parse_args()
+
+def main():
+    args = parseArgs()
+
+    try:
+        baselightFileList = [line for line in readLines(args.baselight) if line.strip()]
+        header, xytechFolderList = loadXytech(args.xytech)
+    except FileNotFoundError as e:
+        sys.exit("Error: could not find file '" + e.filename + "'")
+
+    columnOnePaths = mapBaselightPaths(baselightFileList, xytechFolderList)
+    baselightRestStrings = getFrameStrings(baselightFileList)
+    columnFinalList = buildFrameRanges(baselightRestStrings, columnOnePaths)
+
+    writeCsv(args.output, header, columnFinalList)
+    print("Wrote " + str(len(columnFinalList)) + " rows to " + args.output)
+
+if __name__ == "__main__":
+    main()
