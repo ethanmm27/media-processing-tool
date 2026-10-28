@@ -108,3 +108,16 @@ def writeCsv(outputFileName, header, columnFinalList):
         for element in columnFinalList:
             rowToWrite = element.split(" ")
             writer.writerow(rowToWrite)
+
+def parseArgs():
+    parser = argparse.ArgumentParser(
+        description="Map a Baselight export to a Xytech work order and "
+                    "write the frames to fix as a CSV."
+    )
+    parser.add_argument("baselight", nargs="?", default="Baselight_export_Fall2026.txt",
+                        help="Baselight export file (default: %(default)s)")
+    parser.add_argument("xytech", nargs="?", default="Xytech_Fall2026.txt",
+                        help="Xytech work order file (default: %(default)s)")
+    parser.add_argument("-o", "--output", default="Project_1.csv",
+                        help="output CSV file (default: %(default)s)")
+    return parser.parse_args()
