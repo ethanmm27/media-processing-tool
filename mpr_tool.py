@@ -114,9 +114,9 @@ def parseArgs():
         description="Map a Baselight export to a Xytech work order and "
                     "write the frames to fix as a CSV."
     )
-    parser.add_argument("baselight", nargs="?", default="Baselight_export_Fall2026.txt",
+    parser.add_argument("baselight", nargs="?", default="Baselight.txt",
                         help="Baselight export file (default: %(default)s)")
-    parser.add_argument("xytech", nargs="?", default="Xytech_Fall2026.txt",
+    parser.add_argument("xytech", nargs="?", default="Xytech.txt",
                         help="Xytech work order file (default: %(default)s)")
     parser.add_argument("-o", "--output", default="MPR_Result.csv",
                         help="output CSV file (default: %(default)s)")

@@ -1,0 +1,19 @@
+Xytech Workorder 115
+
+Producer: Elizabeth Holmes
+Operator: Tom Cruise
+Job: Dirtfixing
+
+
+Location:
+/hpsans15/production/Spiderman/reel1/partA/1920x1080
+/hpsans13/production/Spiderman/reel1/VFX/Pixomondo
+/hpsans18/production/Spiderman/pickups/shot_1ab/1920x1080
+/hpsans12/production/Spiderman/reel1/VFX/Lolahouse
+/hpsans18/production/Spiderman/reel1/VFX/Instinctual
+/hpsans10/production/Spiderman/reel1/partB/1920x1080
+/hpsans14/production/Spiderman/pickups/shot_2b/1920x1080
+/hpsans10/production/Spiderman/reel1/partC/1920x1080
+
+Notes:
+Please clean files noted per Colorist Jacob from Twilight

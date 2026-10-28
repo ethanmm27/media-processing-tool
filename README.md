@@ -34,8 +34,8 @@ python mpr_tool.py BASELIGHT_FILE XYTECH_FILE -o output.csv
 
 | Argument | Description | Default |
 |---|---|---|
-| `baselight` | Baselight export file | `Baselight_export_Fall2026.txt` |
-| `xytech` | Xytech work order file | `Xytech_Fall2026.txt` |
+| `baselight` | Baselight export file | `Baselight.txt` |
+| `xytech` | Xytech work order file | `Xytech.txt` |
 | `-o`, `--output` | Output CSV file | `MPR_Result.csv` |
 
 ## Example
@@ -81,9 +81,9 @@ Location,Frames to Fix
 
 ```
 .
-├── project_1.py                    # the script
-├── Baselight_export_Fall2026.txt   # sample Baselight export
-├── Xytech_Fall2026.txt             # sample Xytech work order
+├── mpr_tool.py                    # the script
+├── Baselight.txt   # sample Baselight export
+├── Xytech.txt             # sample Xytech work order
 ├── Sample_Output.csv                   # sample output
 └── README.md
 ```
